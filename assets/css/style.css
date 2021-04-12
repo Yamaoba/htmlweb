@@ -1,1 +1,110 @@
+body {
+  font-family: calibri;
+}
+ 
+nav ul {
+   overflow:hidden;
+   list-style: none;
+   padding:0;
+   width: 100%; 
+   margin:0 0 0;
+   -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+   -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+   box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+   border-bottom: 1px solid #dedede;
+}
 
+nav ul li {
+	margin:0;
+	float:right;
+}
+nav ul a {
+   	display:block;
+	padding:25px;
+	font-weight:600;
+	font-size: 16px;
+	color:black;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+nav ul a:hover {
+   background: #d9d9d9;
+}	
+
+article {
+  width:70%;
+  padding: 25px;
+  border: 1px solid #dedede;
+  margin: 25px auto;
+  float: left;
+  display: block;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+  unselectable:on;
+}
+
+article h1 {
+  text-align: center;	
+}
+
+footer {
+  text-align: center;
+  border: 1px solid #dedede;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  width: 98.8%;
+  clear: both;
+  height: auto;
+  margin: 5px 5px 5px 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+}
+
+aside h3 {
+  text-align: center;
+  border-bottom: 1px solid #80ffaa;
+}
+
+aside {
+  width: 22%;
+  border: 1px solid #dedede;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  float: right;
+  margin: 25px auto;
+}
+
+aside a {
+	text-decoration: none;
+	color: black;
+}
+
+aside a:hover {
+    color: #00bfff;
+	transition: all 0.5s ease;
+	
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  aside {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
+  aside {
+    display: none;
+  }
+}
